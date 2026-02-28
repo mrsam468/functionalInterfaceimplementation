@@ -13,8 +13,7 @@ public class RunnableLambdaExample {
         Thread threadDemo = new Thread(new ThreadDemo());
         threadDemo.start();
 //        IMPLEMENTATION OF THE RUNNABLE FUNCTION WITH LAMBDA EXPRESSION
-        Runnable runnable = () -> System.out.println("the run method is called");
-        Thread thread = new Thread(runnable);
+        Thread thread = new Thread(() -> System.out.println("the run method is called"));
         thread.start();
     }
 }

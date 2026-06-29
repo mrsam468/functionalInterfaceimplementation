@@ -15,7 +15,7 @@ public class FunctionDemo {
         Function<String, Integer> function = new Functions();
         System.out.println(function.apply("samuel"));
 //        IMPLEMENTATION OF  FUNCTION USING LAMBDA EXPRESSION
-        Function<String, Integer> lambdaFunction = (msg) -> msg.length();
+        Function<String, Integer> lambdaFunction = msg -> msg.length();
         System.out.println(lambdaFunction.apply("samuel"));
     }
 }

@@ -15,7 +15,7 @@ public class ConsumerDemo {
         Consumer<String> consumer = new Consumers();
         consumer.accept("david");
 //        IMPLEMENTATION OF CONSUMER FUNCTION USING LAMBDA EXPRESSION
-        Consumer<String> lambdaConsumer = (msg) -> System.out.println("my name is " + msg);
+        Consumer<String> lambdaConsumer = msg -> System.out.println("my name is " + msg);
         lambdaConsumer.accept("james");
     }
 }
